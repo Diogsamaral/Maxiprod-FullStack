@@ -32,6 +32,14 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<AppDbContext>();
+    // Isso garante que o banco de dados seja criado e as migrações aplicadas
+    context.Database.Migrate(); 
+}
+
 // Configuração do pipeline de requisições HTTP.
 app.UseSwagger();
 app.UseSwaggerUI();
