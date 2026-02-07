@@ -89,6 +89,8 @@ Acesse: http://localhost:5173
 Se tiver problema em rodar na sua maquina, farei deploy dessa aplicação em uma ferramenta chamada Railway,
 o link para acesso vai estar vinculado ao repositorio dentro do Github:
 
+Entretanto, no Railway
+
 # Detalhes Técnicos
 
 **- Padronização REST:** Endpoints bem definidos seguindo os verbos HTTP (GET, POST).
