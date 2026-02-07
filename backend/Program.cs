@@ -20,9 +20,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Configuração do CORS para o React (Porta 5173) conseguir acessar
-builder.Services.AddCors(options => {
-    options.AddDefaultPolicy(policy => {
-        policy.AllowAnyOrigin() // Em produção, você pode colocar o link exato aqui
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("LiberarGeral", policy =>
+    {
+        policy.AllowAnyOrigin() // Permite qualquer site (Vercel, Localhost, etc)
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -34,7 +36,7 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.UseCors();
+app.UseCors("LiberarGeral");
 
 app.UseAuthorization();
 
