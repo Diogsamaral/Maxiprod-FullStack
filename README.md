@@ -70,22 +70,10 @@ Na pasta services fica localizado o arquivo api.ts responsavel por fazer a ponte
 # Como Executar o Projeto
 
 **1. Backend**
-Certifique-se de ter o SDK do .NET instalado.
-
-Bash
-cd backend
-dotnet ef database update
-dotnet run
-A API estará disponível em: http://localhost:5232/swagger/index.html.
+A API estará disponível em: https://maxiprod-fullstack-production.up.railway.app/swagger/index.html
 
 **2. Frontend**
-Certifique-se de ter o Node.js instalado.
-
-Bash
-cd frontend
-npm install
-npm run dev
-Acesse: http://localhost:5173
+Acesse: https://courageous-perfection-production.up.railway.app/
 
 Se tiver problema em rodar na sua maquina, farei deploy dessa aplicação em uma ferramenta chamada Railway,
 o link para acesso vai estar vinculado ao repositorio dentro do Github:
