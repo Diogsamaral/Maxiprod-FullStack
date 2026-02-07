@@ -29,6 +29,7 @@ para facilitar. Porém, conformefor necessário, é possível aprimorar essa arq
 
 # Estrutura de Pastas:
 
+```text
 /MAXIPROD FULLSTACK
 │
 ├── /frontend
@@ -103,3 +104,4 @@ sendo assim, não dediquei na construção de um visual muito elaborado.
 # Considerações finais
 
 O projeto foi desenvolvido com foco em simplicidade pragmática. Decisões como o uso de classes utilitárias no CSS e arquitetura modular simplificada foram tomadas para maximizar a agilidade sem comprometer a manutenibilidade.
+```
